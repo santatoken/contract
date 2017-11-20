@@ -37,7 +37,7 @@ contract Santa {
     uint256 constant public tokensForIco = 600000 * 1 ether;
     uint256 constant public tokensForBonus = 200000 * 1 ether;
 
-    uint256 constant public startAirdropTime = 1514073600;
+    uint256 constant public startAirdropTime = 1514116800;
     uint256 public startTransferTime;
     uint256 public tokensSold;
     bool public burned;
@@ -45,8 +45,8 @@ contract Santa {
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
     
-    uint256 constant public start = 1513728000;
-    uint256 constant public end = 1514678399;
+    uint256 constant public start = 1511136000;
+    uint256 constant public end = 1512086399;
     uint256 constant public tokenExchangeRate = 310;
     uint256 public amountRaised;
     bool public crowdsaleClosed = false;
