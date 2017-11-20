@@ -68,7 +68,6 @@ contract Santa {
     function() payable {
 		uint256 amount = msg.value;
 		uint256 numTokens = amount.mul(tokenExchangeRate); 
-		require(numTokens >= 10 * 1 ether);
 		require(!crowdsaleClosed && now >= start && now <= end && tokensSold.add(numTokens) <= tokensForIco);
 		ethFundWallet.transfer(amount);
 		balanceOf[santaFundWallet] = balanceOf[santaFundWallet].sub(numTokens); 
